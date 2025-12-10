@@ -1,0 +1,46 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.virtualenv/
+
+# --- Django specific ---
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+/media/
+staticfiles/        # If you're using collectstatic
+static/             # Only if static files are auto-generated
+
+# --- Environment and secrets ---
+.env
+.env.*
+*.env
+*.ini
+*.cfg
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# --- Python tools ---
+.mypy_cache/
+.pytest_cache/
+coverage.xml
+htmlcov/
