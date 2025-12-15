@@ -9,7 +9,8 @@
     <span>{% if request.path == contact_url %}Contact{% else%}<a href="{{ contact_url }}">Contact</a>{% endif %}</span>
     <span style ='float:right'>
         {% if user.is_authenticated %}
-            <span> {{user.username}}</span>
+            {% url 'profile' as profile_url %}
+            <span> Hi {% if request.path == profile.url %}{{user.username}}{% else %} <a href="{{ profile_url}}">{{user.username}}</a>{% endif %} </span>
             <form action="{% url 'logout' %}" method="post" style="display: inline;">
                 {% csrf_token %}
                 <button type="submit"  style="background:none;border:none;cursor:pointer;text-decoration: underline;font-size:inherit; font:inherit; color:blue">
