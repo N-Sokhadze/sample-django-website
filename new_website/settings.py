@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'new_website.apps.accounts',
+    # 'new_website.apps.accounts.apps.AccountsConfig',
+    # 'new_website.apps.public',
 
 ]
 
