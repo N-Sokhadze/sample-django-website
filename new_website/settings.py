@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'new_website.apps.accounts',
     # 'new_website.apps.accounts.apps.AccountsConfig',
     # 'new_website.apps.public',
@@ -123,7 +124,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 LOGIN_URL = 'accounts:login'
-LOGIN_REDIRECT_URL = 'public:index'
+LOGIN_REDIRECT_URL = 'accounts:profile' #'public:index'
 LOGOUT_REDIRECT_URL = 'public:index'
 
 # Default primary key field type
