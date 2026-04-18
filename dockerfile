@@ -1,4 +1,4 @@
-FROM python:3.7-slim as production
+FROM python:3.7-slim AS production
 
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app/
@@ -12,7 +12,7 @@ COPY new_website ./new_website
 
 EXPOSE 8000
 
-FROM production as development
+FROM production AS development
 
 COPY requirements/dev.txt .requirements/dev.txt
 RUN pip install -r .requirements/dev.txt
