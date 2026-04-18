@@ -1,4 +1,4 @@
-FROM python:3.7-slim AS production
+FROM python:3.14-slim AS production
 
 ENV PYTHONUNBUFFERED=1
 WORKDIR /app/
@@ -14,8 +14,8 @@ EXPOSE 8000
 
 FROM production AS development
 
-COPY requirements/dev.txt .requirements/dev.txt
-RUN pip install -r .requirements/dev.txt
+COPY requirements/dev.txt ./requirements/dev.txt
+RUN pip install -r ./requirements/dev.txt
 
 COPY . .
 

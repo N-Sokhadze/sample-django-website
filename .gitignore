@@ -44,3 +44,7 @@ static/             # Only if static files are auto-generated
 .pytest_cache/
 coverage.xml
 htmlcov/
+
+# --- Git ---
+.gitignore
+.git
