@@ -10,4 +10,4 @@ compose-stop:
 	docker-compose down --remove-orphans $(options)
 
 compose-manage-py:
-	docker-compose run --rm $(options) website python3 manage.py
+	docker-compose run --rm $(options) website python3 manage.py $(cmd)
