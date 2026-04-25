@@ -18,7 +18,7 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
     volumes: *service-volumes
     depends_on: 
-      - postgres
+      - db_migrate
     ports:
       - '8000:8000'
     environment: *app-variables
@@ -28,8 +28,9 @@ services:
     command: python manage.py migrate
     volumes: *service-volumes
     environment: *app-variables
-    depends_on: 
+    depends_on:
       - postgres
+  
 
   postgres:
     image: postgres
@@ -37,7 +38,7 @@ services:
       - '5432:5432'
     environment: *database-variables
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql
 
 volumes:
   db-data:
