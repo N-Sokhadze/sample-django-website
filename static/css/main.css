@@ -1,0 +1,13 @@
+#main {
+  padding-top: 74px;
+}
+
+@media (min-width: 992px) {
+  #main {
+    padding-top: 104px;
+  }
+}
+
+.nw-bg-primary {
+    background-color: #f35a5a;
+}
