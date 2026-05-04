@@ -1,8 +1,13 @@
 {%extends 'base.html'%}
+{% load static %}
 
 {% block title%}HOME{%endblock%}
 
 {% block content%}
+
+<img class="masthead-avatar mb-5" src="{% static 'theme/assets/img/avataaars.svg' %}" alt="..." /> 
+<!-- i disabled cache on the inspect/network/dosable cache. need to turn it on later -->
+
 <h1>
     Homepage
 </h1>
