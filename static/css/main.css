@@ -11,3 +11,30 @@
 .nw-bg-primary {
     background-color: #f35a5a;
 }
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom .2s, color .2s;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #f35a5a;
+  border-color: #f35a5a;
+  
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #f35a5a;
+  border-color: #f35a5a;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  background: none;
+  color: white;
+  border-color: #f35a5a;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active:hover {
+  background: none;
+  color: #f35a5a;
+}
