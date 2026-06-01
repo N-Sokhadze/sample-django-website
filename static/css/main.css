@@ -32,3 +32,15 @@
   background: none;
   color: #f35a5a;
 }
+
+.masthead {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
