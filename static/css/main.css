@@ -14,18 +14,12 @@
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
   border-bottom: 2px solid transparent;
-  transition: border-bottom .2s, color .2s;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #f35a5a;
-  border-color: #f35a5a;
-  
+  transition: border-bottom .2s, color .2s ease;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #f35a5a;
-  border-color: #f35a5a;
+  color: #f35a5a !important;
+  border-color: #f35a5a !important;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
