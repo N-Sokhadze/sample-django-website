@@ -44,3 +44,15 @@
     padding-bottom: 6rem;
   }
 }
+
+.masthead {
+  background-image: url(".../img/kitto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.masthead {
+    background-image: url("../img/kitto.jpg");
+    background-color: transparent !important;
+}
