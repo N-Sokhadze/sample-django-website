@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('new_website.apps.public.urls')),
     # path('accounts/profile', include('new_website.apps.accounts.urls')),
     path("accounts/", include("new_website.apps.accounts.urls")), 
+    path("contact/", include("new_website.apps.contact.urls")), 
 
     
 ]

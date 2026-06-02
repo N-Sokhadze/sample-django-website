@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'new_website.apps.accounts',
+    'new_website.apps.contact',
     # 'new_website.apps.accounts.apps.AccountsConfig',
     # 'new_website.apps.public',
 
