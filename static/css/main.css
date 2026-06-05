@@ -51,13 +51,13 @@
 }
 
 .masthead {
-  background-image: url(".../img/kitto.jpg");
+  background-image: url(".../img/wooden-bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .masthead {
-    background-image: url("../img/kitto.jpg");
+    background-image: url("../img/wooden-bg-image.jpg");
     background-color: transparent !important;
 }
