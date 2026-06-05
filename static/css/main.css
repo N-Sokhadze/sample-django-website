@@ -12,6 +12,11 @@
     background-color: #f35a5a;
 }
 
+.btn-green:hover {
+  background-color: #059669;
+  
+}
+
 #mainNav .navbar-nav li.nav-item a.nav-link {
   border-bottom: 2px solid transparent;
   transition: border-bottom .2s, color .2s ease;
