@@ -61,3 +61,14 @@
     background-image: url("../img/wooden-bg-image.jpg");
     background-color: transparent !important;
 }
+
+.body {
+  margin: 10;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
