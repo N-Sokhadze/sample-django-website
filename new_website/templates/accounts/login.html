@@ -7,7 +7,12 @@
     
 
     <form method="post">
-        <h2>Log in</h2>
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Log in</h2>
+         <div class="divider-custom">
+            <div class="'devider-custom-line"></div>
+            <div class="'devider-custom-icon">👤</div>
+            <div class="devider-custom-line"></div>
+        </div>
         {% csrf_token %}
         {{ form.as_p }}
         <button type='submit' class='btn btn-green nw-bg-primary text-white'>Log in</button>
