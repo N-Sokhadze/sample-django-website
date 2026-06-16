@@ -26,8 +26,22 @@
         <!-- contact section form -->
          <div class="row">
             <div class="col-lg-8 mx-auto">
+
+                {% if success %}
+    
+                <div class="alert alert-success" role="alert">
+                    Your message was sent!
+                </div>
+
+                {% endif %}
                 <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post">
                     {% csrf_token %}
+
+                    {% if form.non_field_errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ form.non_field_errors }}
+                    </div>
+                    {% endif %}
 
                     {% for field in form %}
                     <div class="control-group">
@@ -35,7 +49,7 @@
                             {{ field.label_tag }}
                             {{ field }}
                             {% for error in field.errors %}
-                            <p class="help-block text-danger"></p>
+                            <p class="help-block text-danger">{{error}}</p>
                             {% endfor %}
                         </div>
                     </div>
