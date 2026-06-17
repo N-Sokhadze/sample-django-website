@@ -1,6 +1,7 @@
 import bleach
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
+
 from django.core.mail import send_mail
 
 from new_website import settings
@@ -16,9 +17,10 @@ def contact(request: HttpRequest) -> HttpResponse:
             name=bleach.clean(form.cleaned_data['name'])
             email=bleach.clean(form.cleaned_data['email'])
             message=bleach.clean(form.cleaned_data['message'])
-            send_mail(f"{name} sent an email", message, email, [settings.DEFAULT_FROM_EMAIL])
+            send_mail(f"{name} {email} sent an email", message=message, from_email=settings.DEFAULT_FROM_EMAIL, recipient_list=[settings.DEFAULT_FROM_EMAIL], fail_silently=False,)
             return render(request, "contact.html", {'form':form, 'success':True})
-        # return render(request, 'contact.html')
+
+        return render(request, 'contact.html', {'form':form})
     
     else:
         raise NotImplementedError
