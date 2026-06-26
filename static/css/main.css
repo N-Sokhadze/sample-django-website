@@ -71,4 +71,22 @@
   display: flex;
   justify-content: center;
   margin: 40px;
+
 }
+
+.login-container form p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.login-container input {
+  margin: 10px;
+  
+}
+
+/* _______controls log-in labels' misalignment_______ */
+.login-container form p label {
+  width: 80px;
+}
+
